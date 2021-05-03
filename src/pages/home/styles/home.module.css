@@ -1,1 +1,29 @@
-/* No CSS */
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.image {
+  width: 100%;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: min(100%, 400px);
+}
+.quote {
+  width: 100%;
+  padding: 0 20px;
+}
+.shop-btn {
+  background-color: red;
+  color: white;
+  font-size: 1.8rem;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  width: 50%;
+}

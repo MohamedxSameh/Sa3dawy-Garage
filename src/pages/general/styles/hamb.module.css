@@ -1,0 +1,53 @@
+.menu {
+  display: inline-block;
+  padding: 20px;
+  height: var(--header-height);
+}
+.icon {
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  display: block;
+}
+.top-bar {
+  margin-bottom: 8px;
+}
+.top-bar.animation {
+  animation: top 0.5s linear forwards;
+}
+.bottom-bar.animation {
+  animation: bottom 0.5s linear forwards;
+}
+
+@keyframes top {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(6.5px) rotate(20deg);
+    background-color: red;
+  }
+  100% {
+    transform: translateY(6.5px) rotate(45deg);
+    background-color: red;
+  }
+}
+@keyframes bottom {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6.5px) rotate(-20deg);
+    background-color: red;
+  }
+  100% {
+    transform: translateY(-6.5px) rotate(-45deg);
+    background-color: red;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
