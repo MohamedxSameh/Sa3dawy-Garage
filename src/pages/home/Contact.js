@@ -24,6 +24,32 @@ function Contact() {
           </div>
         </div>
       </div>
+      <ul className={`${styles['social-list']}`}>
+        <li className={`${styles['list-item']}`}>
+          <img
+            src="./photos/social/fb.svg"
+            alt="sa3dawy facebook"
+            className={`${styles['social-icon']}`}
+          />
+        </li>
+        <li className={`${styles['list-item']}`}>
+          <img
+            src="./photos/social/ig.png"
+            alt="sa3dawy instagram"
+            className={`${styles['social-icon']}`}
+          />
+        </li>
+        <li className={`${styles['list-item']}`}>
+          <img
+            src="./photos/social/yt.svg"
+            alt="sa3dawy youtube"
+            className={`${styles['social-icon']}`}
+          />
+        </li>
+      </ul>
+      <h2 className={`${styles['quote']}`}>
+        we are always <br /> available for help
+      </h2>
     </section>
   );
 }

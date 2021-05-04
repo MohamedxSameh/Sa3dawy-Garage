@@ -30,6 +30,25 @@
   font-size: 1.6rem;
   text-transform: capitalize;
 }
+.social-list {
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 150px;
+}
+.list-item {
+  width: 30px;
+}
+.social-icon {
+  width: 100%;
+}
+.quote {
+  color: red;
+  margin-top: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
 
 @media only screen and (min-width: 768px) {
   .contact {
@@ -50,5 +69,12 @@
 @media only screen and (min-width: 1024px) {
   .contact {
     grid-column: 2/3;
+    padding: 0;
+    justify-self: flex-start;
+    align-self: flex-start;
+    width: 100%;
+  }
+  .title {
+    align-self: center;
   }
 }

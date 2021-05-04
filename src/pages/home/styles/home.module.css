@@ -12,7 +12,7 @@
 .image {
   width: 100%;
 }
-.hero-content {
+.shop {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,18 @@
   margin-top: 30px;
   width: 60%;
 }
-
+.visit {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.visit-title {
+  text-transform: uppercase;
+  align-self: center;
+}
+.map {
+  height: 400px;
+}
 @media only screen and (min-width: 768px) {
   .hero-section {
     gap: 70px;
@@ -48,6 +59,13 @@
     padding: 25px 30px;
     width: 50%;
   }
+  .visit {
+    padding: 0 20px;
+  }
+  .map {
+    height: 500px;
+    margin-top: 10px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .hero-section {
@@ -58,8 +76,13 @@
   .hero-image {
     grid-column: 2/3;
   }
-  .hero-content {
+  .shop {
     grid-column: 1/2;
     grid-row: 1/2;
+  }
+  .visit {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 0;
   }
 }
