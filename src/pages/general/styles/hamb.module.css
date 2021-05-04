@@ -1,9 +1,8 @@
-.menu {
-  display: inline-block;
-  padding: 20px;
-  height: var(--header-height);
-}
 .icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+.bar {
   width: 30px;
   height: 5px;
   background-color: black;
@@ -46,8 +45,8 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .menu {
+@media only screen and (min-width: 1024px) {
+  .icon {
     display: none;
   }
 }

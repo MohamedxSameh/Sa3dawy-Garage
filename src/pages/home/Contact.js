@@ -4,7 +4,7 @@ function Contact() {
   return (
     <section className={`${styles['contact']}`}>
       <h1 className={`${styles['title']}`}>contact us</h1>
-      <main className={`${styles['main']}`}>
+      <div className={`${styles['info']}`}>
         <div className={`${styles['outer-container']}`}>
           <h2 className={`${styles['phone']}`}>phone</h2>
           <div className={`${styles['inner-container']}`}>
@@ -23,7 +23,7 @@ function Contact() {
             </p>
           </div>
         </div>
-      </main>
+      </div>
     </section>
   );
 }

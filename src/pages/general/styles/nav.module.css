@@ -1,0 +1,37 @@
+.navbar {
+  height: calc(100vh - 78px);
+  margin: 30px 20px;
+}
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  justify-content: space-between;
+}
+.list-item {
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    height: auto;
+    margin: 10px 0;
+  }
+  .nav-list {
+    align-items: center;
+    flex-direction: row;
+    height: auto;
+    margin: 0 auto;
+    width: min(85%, 1000px);
+  }
+  .list-item {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .list-item:hover {
+    cursor: pointer;
+    color: red;
+  }
+}

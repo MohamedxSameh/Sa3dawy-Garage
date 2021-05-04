@@ -7,7 +7,7 @@
   text-transform: uppercase;
   align-self: center;
 }
-.main {
+.info {
   margin-top: 30px;
 }
 .phone,
@@ -28,4 +28,27 @@
 .number,
 .directions {
   font-size: 1.6rem;
+  text-transform: capitalize;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact {
+    padding: 0 40px;
+  }
+  .title {
+    align-self: flex-start;
+  }
+  .phone,
+  .location {
+    font-size: 2rem;
+  }
+  .number,
+  .directions {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .contact {
+    grid-column: 2/3;
+  }
 }

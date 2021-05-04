@@ -18,8 +18,8 @@ function Home() {
           </div>
           <button className={`${styles['shop-btn']}`}>shop</button>
         </div>
+        <Contact />
       </main>
-      <Contact />
     </>
   );
 }
