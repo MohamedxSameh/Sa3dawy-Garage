@@ -1,0 +1,60 @@
+.list {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: space-evenly;
+  width: min(90%, 600px);
+}
+.playlist {
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  display: flex;
+}
+.playlist-image {
+  width: 150px;
+  border-radius: 10px 0 0 10px;
+}
+.playlist-title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 1px;
+}
+@media only screen and (min-width: 768px) {
+  .list {
+    height: 750px;
+    width: 70%;
+  }
+  .playlist-image {
+    width: 200px;
+  }
+  .playlist-title {
+    font-size: 2.4rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+  }
+  .playlist {
+    flex-direction: column;
+    margin-top: 40px;
+    border-radius: 0;
+  }
+
+  .playlist-image {
+    width: 400px;
+    border-radius: 0;
+  }
+  .playlist-title {
+    font-size: 2.8rem;
+    margin: 30px 0 20px;
+  }
+}

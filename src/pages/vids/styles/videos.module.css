@@ -1,0 +1,17 @@
+.main {
+  margin-top: var(--header-height);
+}
+.title {
+  background-color: red;
+  color: white;
+  font-size: 2.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 8px 0;
+}
+@media only screen and (min-width: 1024px) {
+  .main {
+    margin-top: var(--full-header-height);
+  }
+}

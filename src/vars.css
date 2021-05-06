@@ -5,4 +5,5 @@
 1201px and more — Extra large screens, TV. */
 :root {
   --full-header-height: 100px;
+  --header-height: 68px;
 }
