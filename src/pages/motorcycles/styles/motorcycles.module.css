@@ -1,0 +1,78 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 70px auto 0;
+  width: 90%;
+  padding: 50px 0;
+}
+.title {
+  color: #ff1f1f;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.motorcycles {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: min(100%, 800px);
+  margin-top: 50px;
+}
+.btn {
+  background-color: white;
+  height: auto;
+}
+.icon {
+  width: 30px;
+}
+.bike {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.bike-image {
+  width: min(100%, 500px);
+}
+.bike-title {
+  font-size: 1.8rem;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+  .motorcycles {
+    margin-top: 70px;
+  }
+  .icon {
+    width: 40px;
+  }
+  .bike-title {
+    font-size: 2.5rem;
+    margin-top: 50px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    margin: var(--full-header-height) auto 0;
+  }
+  .bike:hover {
+    cursor: pointer;
+  }
+  .bike:hover .bike-type {
+    color: #ff1f1f;
+  }
+  .bike:hover .bike-image {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+  }
+  .icon:hover {
+    color: black;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+  }
+}
