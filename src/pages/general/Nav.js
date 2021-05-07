@@ -1,22 +1,22 @@
 import { Link } from 'react-router-dom';
 import styles from './styles/nav.module.css';
 
-function Nav({ setOpen, hamb }) {
+function Nav({ setOpen, hamb, scroll }) {
   const close = () => {
     if (hamb) {
       setOpen(false);
     }
   };
   return (
-    <nav className={`${styles['navbar']}`}>
-      <ul className={`${styles['nav-list']}`}>
+    <nav className={`${styles['navbar']} ${scroll && styles.active}`}>
+      <ul className={`${styles['nav-list']} ${scroll && styles.activeList} `}>
         <li className={`${styles['list-item']}`}>
           <Link to="/" className={`${styles['nav-link']}`} onClick={close}>
             home
           </Link>
         </li>
         <li className={`${styles['list-item']}`}>
-          <Link to="shop" className={`${styles['nav-link']}`} onClick={close}>
+          <Link to="/shop" className={`${styles['nav-link']}`} onClick={close}>
             motorcycles
           </Link>
         </li>

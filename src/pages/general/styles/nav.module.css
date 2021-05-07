@@ -7,9 +7,13 @@
   flex-direction: column;
   height: 350px;
   justify-content: space-between;
+  font-size: 3rem;
+}
+.list-item {
+  font-size: inherit;
 }
 .nav-link {
-  font-size: 3rem;
+  font-size: inherit;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -17,18 +21,30 @@
 @media only screen and (min-width: 1024px) {
   .navbar {
     height: auto;
-    margin: 10px 0;
+    margin: 10px 0 0;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .active {
+    justify-content: flex-end;
   }
   .nav-list {
     align-items: center;
     flex-direction: row;
     height: auto;
-    margin: 0 auto;
+    justify-content: space-betwee;
     width: min(85%, 1000px);
+    font-size: 1.8rem;
+  }
+  .activeList {
+    max-width: 800px;
+    font-size: 1.6rem;
   }
   .nav-link {
-    font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: 500;
+    letter-spacing: 1px;
   }
   .nav-link:hover {
     cursor: pointer;

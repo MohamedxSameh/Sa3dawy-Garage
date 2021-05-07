@@ -4,13 +4,14 @@
   gap: 50px;
   min-height: 100vh;
   place-content: start center;
-  width: 100vw;
 }
 .hero-image {
   height: auto;
 }
 .image {
   width: 100%;
+  max-height: 600px;
+  object-fit: cover;
 }
 .shop {
   align-items: center;
@@ -61,17 +62,18 @@
   }
   .shop-btn {
     margin-top: 50px;
-    padding: 25px 30px;
     width: 50%;
+    min-width: 220px;
   }
   .shop-link {
     font-size: 2rem;
+    padding: 20px 30px;
   }
   .visit {
     padding: 0 20px;
   }
   .map {
-    height: 500px;
+    height: 400px;
     margin-top: 10px;
   }
 }
@@ -80,6 +82,9 @@
     grid-template-columns: 1fr 1fr;
     margin-top: var(--full-header-height);
     place-items: center center;
+  }
+  .image {
+    width: calc((100vh - var(--full-header-height)) * 640 / 800);
   }
   .hero-image {
     grid-column: 2/3;
@@ -92,5 +97,6 @@
     grid-column: 1/2;
     grid-row: 2/3;
     padding: 0;
+    margin-left: 20px;
   }
 }

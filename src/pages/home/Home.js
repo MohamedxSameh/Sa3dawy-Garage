@@ -2,17 +2,19 @@ import { Link } from 'react-router-dom';
 import Quote from '../general/Quote';
 import Contact from './Contact';
 import Map from './Map';
+import Slider from './Slider';
 import styles from './styles/home.module.css';
 function Home() {
   return (
     <>
       <main className={`${styles['hero-section']}`}>
         <div className={`${styles['hero-image']}`}>
-          <img
-            src="/photos/main.jpg"
+          {/* <img
+            src="/photos/test.png"
             alt="cool motorcycles"
             className={`${styles['image']}`}
-          />
+          /> */}
+          <Slider />
         </div>
         <div className={`${styles['shop']}`}>
           <div className={`${styles['quote']}`}>

@@ -7,6 +7,7 @@ import styles from './styles/header.module.css';
 function Header() {
   const [open, setOpen] = useState(false);
   const [hamb, setHamb] = useState(true);
+  const [scroll, setScroll] = useState(false);
   const resize = () => {
     if (window.innerWidth >= 1024) {
       setOpen(true);
@@ -16,6 +17,13 @@ function Header() {
       setHamb(true);
     }
   };
+  const activate = () => {
+    if (window.scrollY < 20) {
+      setScroll(false);
+    } else {
+      setScroll(true);
+    }
+  };
   useEffect(() => {
     resize();
     window.addEventListener('resize', resize);
@@ -23,8 +31,13 @@ function Header() {
       window.removeEventListener('resize', resize);
     };
   }, []);
+  window.addEventListener('scroll', activate);
   return (
-    <div className={`${styles['header-container']} ${open && styles.opened}`}>
+    <div
+      className={`${styles['header-container']} ${open && styles.opened} ${
+        scroll && styles.active
+      }`}
+    >
       <header className={`${styles['header']}`}>
         <div className={`${styles['logo']}`}>
           <Link to="/">
@@ -37,7 +50,7 @@ function Header() {
         </div>
         <Hamb open={open} setOpen={setOpen} />
       </header>
-      {open && <Nav setOpen={setOpen} hamb={hamb} />}
+      {open && <Nav setOpen={setOpen} hamb={hamb} scroll={scroll} />}
     </div>
   );
 }

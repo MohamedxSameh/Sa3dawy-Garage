@@ -7,6 +7,9 @@
   width: 100%;
   z-index: 100;
 }
+.active {
+  background-color: rgba(256, 256, 256, 0.8);
+}
 .header {
   align-items: center;
   display: flex;
@@ -25,8 +28,19 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  .header-container {
+    padding: 10px 0;
+  }
   .header {
     flex-direction: column;
-    padding: 10px 0 0;
+    padding: 0;
+    width: auto;
+  }
+  .active {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: rgba(256, 256, 256, 0.9);
   }
 }

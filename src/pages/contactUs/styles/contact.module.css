@@ -1,0 +1,136 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: var(--header-height);
+  gap: 30px;
+  padding: 10px 0 0;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.title {
+  text-transform: uppercase;
+  align-self: center;
+}
+.info {
+  margin-top: 30px;
+}
+.phone,
+.location {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: red;
+}
+.inner-container {
+  align-items: center;
+  display: flex;
+  margin: 10px 0 20px;
+}
+.icon {
+  font-size: 2rem;
+  margin-right: 15px;
+}
+.number,
+.directions {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+.number:hover,
+.directions:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: blue;
+}
+.social-list {
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 150px;
+}
+.list-item {
+  width: 30px;
+}
+.list-item:hover {
+  transform: scale(1.1);
+}
+.social-icon {
+  width: 100%;
+}
+.quote {
+  color: red;
+  margin-top: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.visit {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.visit-title {
+  text-transform: uppercase;
+  align-self: center;
+}
+.map {
+  margin: 10px auto 0;
+  height: 400px;
+  min-width: 300px;
+  width: min(100%, 800px);
+}
+@media only screen and (min-width: 768px) {
+  .main {
+    gap: 40px;
+  }
+  .contact {
+    padding: 0 40px;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: min(90%, 800px);
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .phone,
+  .location {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .number,
+  .directions {
+    font-size: 1.8rem;
+  }
+  .social-list {
+    margin-top: 30px;
+    width: 200px;
+  }
+  .list-item {
+    width: 35px;
+  }
+  .quote {
+    font-size: 3rem;
+    letter-spacing: 1px;
+  }
+  .map {
+    height: 600px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .main {
+    margin-top: var(--full-header-height);
+  }
+  .contact {
+    padding: 0;
+    justify-self: flex-start;
+    align-self: flex-start;
+    width: 100%;
+  }
+  .title {
+    align-self: center;
+  }
+}

@@ -7,6 +7,8 @@ import Motorcycles from './pages/motorcycles/Motorcycles';
 import Videos from './pages/vids/Videos';
 import Playlist from './pages/vids/Playlist';
 import ScrollToTop from './pages/general/ScrollToTop';
+import Page404 from './pages/general/Page404';
+import ContactUs from './pages/contactUs/ContactUs';
 function App() {
   return (
     <Router>
@@ -18,6 +20,8 @@ function App() {
           <Route exact path="/shop" component={Motorcycles} />
           <Route exact path="/videos" component={Videos} />
           <Route exact path="/videos/:id" component={Playlist} />
+          <Route exact path="/contact" component={ContactUs} />
+          <Route path="/" component={Page404} />
         </Switch>
         <Footer />
       </div>
