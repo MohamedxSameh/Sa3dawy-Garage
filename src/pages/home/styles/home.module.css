@@ -24,12 +24,18 @@
 }
 .shop-btn {
   background-color: red;
-  color: white;
-  font-size: 1.8rem;
-  padding: 15px 30px;
-  text-transform: uppercase;
   margin-top: 30px;
   width: 60%;
+}
+.shop-btn:hover {
+  cursor: pointer;
+}
+.shop-link {
+  color: white;
+  font-size: 1.8rem;
+  width: 100%;
+  padding: 15px 30px;
+  text-transform: uppercase;
 }
 .visit {
   display: flex;
@@ -54,10 +60,12 @@
     width: 70%;
   }
   .shop-btn {
-    font-size: 2rem;
     margin-top: 50px;
     padding: 25px 30px;
     width: 50%;
+  }
+  .shop-link {
+    font-size: 2rem;
   }
   .visit {
     padding: 0 20px;

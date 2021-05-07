@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Quote from '../general/Quote';
 import Contact from './Contact';
 import Map from './Map';
@@ -17,7 +18,11 @@ function Home() {
           <div className={`${styles['quote']}`}>
             <Quote />
           </div>
-          <button className={`${styles['shop-btn']}`}>shop</button>
+          <button className={`${styles['shop-btn']}`}>
+            <Link to="/shop" className={`${styles['shop-link']}`}>
+              shop
+            </Link>
+          </button>
         </div>
         <Contact />
         <div className={`${styles['visit']}`}>
