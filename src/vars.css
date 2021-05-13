@@ -4,6 +4,6 @@
 1025px — 1200px: Desktops, large screens.
 1201px and more — Extra large screens, TV. */
 :root {
-  --full-header-height: 100px;
-  --header-height: 68px;
+  --full-header-height: 78px;
+  --header-height: 48px;
 }

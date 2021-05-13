@@ -1,4 +1,3 @@
-import Contact from '../home/Contact';
 import Map from '../home/Map';
 import styles from './styles/contact.module.css';
 function About() {

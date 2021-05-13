@@ -1,0 +1,92 @@
+.bike-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 220px;
+}
+.name {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+}
+.model,
+.color,
+.kilometers {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.price {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.red {
+  color: red;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.mod {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: grey;
+}
+.mod:hover {
+  cursor: pointer;
+  color: black;
+}
+.modifications {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+.arrow {
+  margin-left: 10px;
+}
+.up {
+  transform: rotate(180deg);
+  transition: rotate 1s;
+}
+.list {
+  margin-left: 30px;
+}
+.item {
+  list-style-type: disc;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+@media only screen and (min-width: 768px) {
+  .bike-info {
+    align-items: flex-start;
+    margin-top: 20px;
+    justify-self: center;
+  }
+  .name {
+    font-size: 3rem;
+  }
+  .model,
+  .color,
+  .kilometers {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .price {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+  .red {
+    font-size: 2.2rem;
+  }
+  .mod {
+    margin-bottom: 15px;
+  }
+  .modifications {
+    font-size: 2rem;
+  }
+  .item {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+}

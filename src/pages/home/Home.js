@@ -9,11 +9,6 @@ function Home() {
     <>
       <main className={`${styles['hero-section']}`}>
         <div className={`${styles['hero-image']}`}>
-          {/* <img
-            src="/photos/test.png"
-            alt="cool motorcycles"
-            className={`${styles['image']}`}
-          /> */}
           <Slider />
         </div>
         <div className={`${styles['shop']}`}>

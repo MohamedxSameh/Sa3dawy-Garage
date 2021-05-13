@@ -8,20 +8,20 @@
   z-index: 100;
 }
 .active {
-  background-color: rgba(256, 256, 256, 0.8);
+  background-color: rgba(256, 256, 256, 0.93);
 }
 .header {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 5px 10px;
   width: 100%;
 }
 .opened {
   background-color: white;
 }
 .logo {
-  width: 130px;
+  width: 100px;
 }
 .logo-image {
   width: 100%;
@@ -29,7 +29,7 @@
 
 @media only screen and (min-width: 1024px) {
   .header-container {
-    padding: 10px 0;
+    padding: 5px 0;
   }
   .header {
     flex-direction: column;

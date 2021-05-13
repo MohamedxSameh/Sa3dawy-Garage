@@ -2,35 +2,52 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 70px auto 0;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: var(--header-height);
+  min-height: calc(100vh - var(--header-height) - 270px);
   width: 90%;
-  padding: 50px 0;
 }
 .title {
   color: #ff1f1f;
   font-size: 24px;
   text-transform: uppercase;
+  margin-top: 10px;
 }
 .motorcycles {
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   width: min(100%, 800px);
-  margin-top: 50px;
+  margin-top: 40px;
+  position: relative;
 }
 .btn {
   background-color: white;
   height: auto;
 }
+.left-btn {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 45px);
+}
+.right-btn {
+  position: absolute;
+  right: 0;
+  top: calc(50% - 45px);
+}
 .icon {
   width: 30px;
 }
+.bike-link {
+  width: 100%;
+}
 .bike {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 10px;
+  margin: 0 auto;
+  width: 70%;
 }
 .bike-image {
   width: min(100%, 500px);
@@ -39,35 +56,33 @@
   font-size: 1.8rem;
   margin-top: 30px;
   text-transform: uppercase;
+  text-align: center;
 }
 @media only screen and (min-width: 768px) {
   .title {
     font-size: 30px;
-  }
-  .motorcycles {
-    margin-top: 70px;
   }
   .icon {
     width: 40px;
   }
   .bike-title {
     font-size: 2.5rem;
-    margin-top: 50px;
+    margin-top: 40px;
   }
 }
 @media only screen and (min-width: 1024px) {
   .container {
-    margin: var(--full-header-height) auto 0;
+    margin-top: var(--full-header-height);
   }
   .bike:hover {
     cursor: pointer;
   }
-  .bike:hover .bike-type {
+  .bike-link:hover .bike-title {
     color: #ff1f1f;
   }
-  .bike:hover .bike-image {
+  .bike-image:hover {
     transform: scale(1.1);
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
   }
   .icon:hover {
     color: black;

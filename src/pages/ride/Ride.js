@@ -1,25 +1,31 @@
 import { useState } from 'react';
-import styles from './styles/motorcycles.module.css';
+import { Link } from 'react-router-dom';
+import styles from './styles/ride.module.css';
 const bikes = [
   {
     src: '/photos/Rides/naked.png',
     title: 'naked & street bikes',
+    url: 'shop/naked-bikes',
   },
   {
     src: './photos/Rides/sport.png',
-    title: 'sports bikes',
+    title: 'sport bikes',
+    url: 'shop/sport-bikes',
   },
   {
     src: './photos/Rides/adventure.png',
     title: 'touring & adventure bikes',
+    url: 'shop/adventure-bikes',
   },
   {
     src: './photos/Rides/cruiser.png',
     title: 'cruising bikes',
+    url: 'shop/cruiser-bikes',
   },
   {
     src: './photos/Rides/scooter.png',
     title: 'scooter',
+    url: 'shop/scooter',
   },
 ];
 
@@ -41,6 +47,7 @@ function Motorcycles() {
           setBike(bike - 1);
         }
         break;
+      default:
     }
   };
   return (
@@ -65,13 +72,16 @@ function Motorcycles() {
             />
           </svg>
         </button>
-        <div className={styles['bike']}>
-          <img
-            className={styles['bike-image']}
-            src={bikes[bike].src}
-            alt="Motorcycle"
-          />
-        </div>
+        <Link to={bikes[bike].url} className={`${styles['bike-link']}`}>
+          <div className={styles['bike']}>
+            <img
+              className={styles['bike-image']}
+              src={bikes[bike].src}
+              alt="Motorcycle"
+            />
+          </div>
+          <h2 className={styles['bike-title']}>{bikes[bike].title}</h2>
+        </Link>
         <button
           className={`${styles.btn} ${styles['right-btn']}`}
           onClick={() => changeBike('next')}
@@ -91,7 +101,6 @@ function Motorcycles() {
           </svg>
         </button>
       </div>
-      <h2 className={styles['bike-title']}>{bikes[bike].title}</h2>
     </main>
   );
 }

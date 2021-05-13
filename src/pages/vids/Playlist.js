@@ -1,4 +1,3 @@
-// import ReactPlayer from 'react-player';
 import { useParams } from 'react-router';
 import styles from './styles/playlist.module.css';
 
@@ -42,6 +41,7 @@ function Playlist() {
                 <iframe
                   className={`${styles['video']}`}
                   src={`https://www.youtube.com/embed/${video.id}`}
+                  title={video.id}
                   allowfullscreen
                 />
               </div>
